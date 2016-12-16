@@ -2,7 +2,6 @@ body{
   background: url(../img/background.jpg) repeat-x #0c73a0;
   color: #fff;
   margin: 0;
-  padding-bottom: 35px;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
@@ -37,7 +36,44 @@ body{
 .contacts p{
   margin: 5px 0;
 }
-
+.countries {
+  float: right;
+  clear:right;
+  margin: 10px 25px 5px;
+}
+a.country {
+  margin: 0 1px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 42px 0 0 0;
+  color: #5fa5bb;
+  box-sizing: border-box;
+  background-size: 42px 42px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  text-align: center;
+  font-size: 11px;
+  float: left;
+}
+a.india {
+  background-image: url(../img/india.png);
+}
+a.maldives {
+  background-image: url(../img/maldives.png);
+}
+a.bhutan {
+  background-image: url(../img/bhutan.png);
+}
+a.nepal {
+  background-image: url(../img/nepal.png);
+}
+a.tibet {
+  background-image: url(../img/tibet.png);
+}
+a.sri-lanka {
+  background-image: url(../img/sri-lanka.png);
+}
 .cover {
   border-top: 1px solid #128aa7;
   border-bottom: 1px solid #128aa7;
