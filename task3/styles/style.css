@@ -82,7 +82,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
-.registration h2 {
+.registration .head h2 {
   background-color: rgba(0,0,0,0.63);
   margin: 0;
   padding: 20px;
