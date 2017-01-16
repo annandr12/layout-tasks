@@ -154,6 +154,67 @@ header nav {
   height: 490px;
   background-color: #f9f9f9;
 }
+.blog .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 100px;
+}
+.blog .container::before {
+  content: "◥";
+  padding: 0;
+  margin: 0;
+  top: 238px;
+  left: 350px;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-shadow:0 2px 2px rgba(0, 0, 0, 0.3);
+  font-size: 32px;
+}
+.blog .text-cloud {
+  height: 250px;
+  width: 400px;
+  background-color: #fff;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px 40px;
+}
+.text-cloud .avatar {
+  float: left;
+  margin: 0 15px;
+  margin-left: -60px;
+}
+.text-cloud p {
+  font-weight: lighter;
+  clear: both;
+}
+.text-cloud h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 23px;
+  color: #454545;
+  font-weight: lighter;
+  text-transform: uppercase;
+  float: left;
+  line-height: 2;
+}
+.text-cloud b {
+  color: #edbfff;
+  font-weight: lighter;
+}
+.recent-updates {
+  width: 500px;
+  margin-left: 50px;
+}
+.recent-updates .avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  background-image: url(../img/avatar.jpg);
+  background-repeat: no-repeat;
+}
+
+
 .clients {
   height: 120px;
   background-color: #f9f9f9;
@@ -161,11 +222,12 @@ header nav {
   border-bottom: 1px solid #d8d8d8;
 }
 .clients .container {
-  padding: 25px 35px;
+  padding: 25px 90px;
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
 footer {
   background: url(../img/bg-blur.jpg);
   background-repeat: repeat-x;
