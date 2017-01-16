@@ -1,0 +1,61 @@
+header {
+  height: 798px;
+}
+.container {
+  width: 768px;
+}
+.overlay {
+  display: block;
+  height: 400px;
+  top: 244px;
+}
+header nav {
+  display: block;
+}
+.menu ul {
+  padding-top: 25px;
+}
+
+.slider {
+  top:100px;
+}
+.slide-text{
+  width:320px;
+  height: 185px;
+  overflow: hidden;
+  margin-top: 100px;
+}
+.slide h2{
+  font-size: 35px;
+}
+.slide h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+.slide p {
+  font-size: 18px;
+}
+.about {
+
+}
+.blog {
+
+}
+.clients {
+
+}
+footer {
+}
+.news {
+
+}
+.bottom {
+  height: 200px;
+  /*display: block;*/
+}
+.bottom p {
+  align-self: flex-end;
+}
+/*.menu-footer {
+  height: 200px;
+}*/
