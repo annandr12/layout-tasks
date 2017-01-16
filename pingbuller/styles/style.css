@@ -117,25 +117,39 @@ header nav {
   border-top: 1px solid #000;
   border-bottom: 1px solid #fff;
   color: #fff;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
 }
 .about .container {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+  padding: 70px 20px;
 }
-.about .about_article .icon {
+.about .icon {
+  margin: 15px 0;
 }
-.about .about_article .text {
+.about_article h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 23px;
+  font-weight: lighter;
+  padding: 5px 0;
+}
+.about_article .text {
   width: 225px;
   height: 115px;
   overflow: hidden;
+  margin: 5px 0;
 }
-.about .about_article .read-more {
+.about_article .read-more {
   text-transform: uppercase;
   float: right;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  margin: 10px;
 }
-
+.about_article .read-more:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
 .blog {
   height: 490px;
   background-color: #f9f9f9;
