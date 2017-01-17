@@ -205,6 +205,11 @@ header nav {
   width: 500px;
   margin-left: 50px;
 }
+.recent-updates .item {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
 .recent-updates .avatar {
   height: 50px;
   width: 50px;
@@ -212,8 +217,27 @@ header nav {
   display: inline-block;
   background-image: url(../img/avatar.jpg);
   background-repeat: no-repeat;
+  margin: 5px;
 }
-
+.recent-updates .item-header {
+  display: block;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.recent-updates .read-more {
+  text-transform: uppercase;
+  float: right;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  margin: 10px;
+  color: #454545;
+}
+.ava2{
+  background-position: center;
+}
+.ava3{
+  background-position: right;
+}
 
 .clients {
   height: 120px;
@@ -237,8 +261,40 @@ footer {
 .news {
   height: 395px;
   background-color: #ececec;
+  color: #787878;
 }
-
+.news .container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+.news .section {
+  width: 280px;
+  height: 200px;
+  overflow: hidden;
+}
+.news h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 23px;
+  color: #454545;
+  font-weight: lighter;
+  text-transform: uppercase;
+  line-height: 2;
+}
+.news .logo {
+  background-image: url(../img/logo-grey.png);
+  background-position: left bottom;
+  padding: 5px 0;
+}
+.news p {
+  padding: 5px 0;
+}
+.news .copyright {
+  color: #c5c5c5;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
 .bottom {
   height: 115px;
   padding: 0;
