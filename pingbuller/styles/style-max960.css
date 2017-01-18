@@ -9,7 +9,7 @@ header {
   height: 400px;
   top: 244px;
 }
-header nav {
+header .overhead {
   display: block;
 }
 .menu ul {
@@ -36,12 +36,6 @@ header nav {
   font-size: 18px;
 }
 
-.bottom {
-  height: 200px;
-}
-.bottom p {
-  align-self: flex-end;
-}
 .about_article .text {
   width: 155px;
   height: 135px;
@@ -79,8 +73,16 @@ header nav {
   width: 210px;
 }
 .bottom {
+  height: 200px;
+  padding-top: 15px;
   padding-bottom: 80px;
+}
+.bottom p {
+  align-self: flex-end;
 }
 .menu-footer ul{
   width: 520px;
+}
+.menu-footer a {
+  font-size: 16px;
 }

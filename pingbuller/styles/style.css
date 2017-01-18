@@ -32,7 +32,7 @@ header {
 header .container {
   padding-top: 70px;
 }
-header nav {
+header .overhead {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -161,14 +161,15 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 100px;
+  position: relative;
 }
 .blog .container::before {
   content: "◥";
   padding: 0;
   margin: 0;
-  top: 238px;
+  top: 338px;
   left: 350px;
-  position: relative;
+  position: absolute;
   display: inline-block;
   color: #fff;
   text-shadow:0 2px 2px rgba(0, 0, 0, 0.3);
@@ -179,7 +180,7 @@ header nav {
   width: 400px;
   background-color: #fff;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-  padding: 30px 40px;
+  padding: 20px 30px;
 }
 .text-cloud .avatar {
   float: left;
@@ -190,7 +191,7 @@ header nav {
   font-weight: lighter;
   clear: both;
 }
-.text-cloud h2{
+.text-cloud h3{
   font-family: 'Oswald', sans-serif;
   font-size: 23px;
   color: #454545;
@@ -204,7 +205,8 @@ header nav {
   font-weight: lighter;
 }
 .recent-updates {
-  width: 500px;
+  width: 450px;
+  margin: 20px 30px;
 }
 .recent-updates h3{
   text-transform: uppercase;
@@ -369,4 +371,5 @@ header .widget .active a::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 25px;
 }
