@@ -50,7 +50,7 @@ header .overhead {
 .text-cloud .avatar {
   margin-right: 0;
 }
-.text-cloud h2{
+.text-cloud h3 {
   line-height: 1;
   width: 120px;
 }
@@ -84,5 +84,5 @@ header .overhead {
   width: 520px;
 }
 .menu-footer a {
-  font-size: 16px;  
+  font-size: 16px;
 }
