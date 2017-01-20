@@ -1,0 +1,88 @@
+header {
+  height: 798px;
+}
+.container {
+  width: 768px;
+}
+.overlay {
+  display: block;
+  height: 400px;
+  top: 244px;
+}
+header .overhead {
+  display: block;
+}
+.menu ul {
+  padding-top: 25px;
+}
+
+.slider {
+  top: 90px;
+}
+.slide-text{
+  width:320px;
+  height: 185px;
+  overflow: hidden;
+  margin-top: 100px;
+}
+.slide h2{
+  font-size: 35px;
+}
+.slide h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+.slide p {
+  font-size: 18px;
+}
+
+.about_article .text {
+  width: 155px;
+  height: 135px;
+}
+.blog .text-cloud {
+  height: 280px;
+  width: 310px;
+}
+.blog .container::before {
+  content: none;
+}
+.text-cloud .avatar {
+  margin-right: 0;
+}
+.text-cloud h2{
+  line-height: 1;
+  width: 120px;
+}
+.text-cloud p {
+  height: 135px;
+  overflow: hidden;
+}
+.item-body {
+  height: 50px;
+  width: 220px;
+  overflow: hidden;
+}
+.recent-updates {
+  width: 350px;
+}
+.clients .container {
+  padding: 25px 20px;
+}
+.news .section {
+  width: 210px;
+}
+.bottom {
+  height: 200px;
+  padding-top: 15px;
+  padding-bottom: 80px;
+}
+.bottom p {
+  align-self: flex-end;
+}
+.menu-footer ul{
+  width: 520px;
+}
+.menu-footer a {
+  font-size: 16px;
+}
