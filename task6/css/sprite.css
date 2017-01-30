@@ -1,0 +1,102 @@
+/*<i class="clients-logo clients-logo-client-1"></i>
+<i class="clients-logo clients-logo-client-2"></i>
+<i class="clients-logo clients-logo-client-3"></i>
+<i class="clients-logo clients-logo-client-4"></i>
+<i class="clients-logo clients-logo-client-5"></i>
+<i class="clients-logo clients-logo-client-6"></i>
+<i class="icons icons-letter-icon"></i>
+<i class="icons icons-location-icon"></i>
+<i class="icons icons-mobile-icon"></i>
+<i class="icons icons-plus-icon"></i>
+<i class="icons icons-settings-icon"></i>
+<i class="icons icons-sliders-icon"></i>
+<i class="icons icons-track-icon"></i></i>*/
+.clients-logo {
+    background-image: url(../img/clients-logos.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.clients-logo-client-1 {
+    width: 143px;
+    height: 62px;
+    background-position: -5px -5px;
+}
+
+.clients-logo-client-2 {
+    width: 143px;
+    height: 62px;
+    background-position: -5px -77px;
+}
+
+.clients-logo-client-3 {
+    width: 184px;
+    height: 64px;
+    background-position: -5px -149px;
+}
+
+.clients-logo-client-4 {
+    width: 143px;
+    height: 62px;
+    background-position: -158px -5px;
+}
+
+.clients-logo-client-5 {
+    width: 143px;
+    height: 62px;
+    background-position: -158px -77px;
+}
+
+.clients-logo-client-6 {
+    width: 143px;
+    height: 62px;
+    background-position: -199px -149px;
+}
+
+.icons {
+    background-image: url(../img/icons.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icons-letter-icon {
+    width: 18px;
+    height: 18px;
+    background-position: -5px -5px;
+}
+
+.icons-location-icon {
+    width: 18px;
+    height: 18px;
+    background-position: -33px -5px;
+}
+
+.icons-mobile-icon {
+    width: 18px;
+    height: 18px;
+    background-position: -61px -5px;
+}
+
+.icons-plus-icon {
+    width: 37px;
+    height: 37px;
+    background-position: -5px -33px;
+}
+
+.icons-settings-icon {
+    width: 34px;
+    height: 34px;
+    background-position: -52px -33px;
+}
+
+.icons-sliders-icon {
+    width: 34px;
+    height: 34px;
+    background-position: -96px -5px;
+}
+
+.icons-track-icon {
+    width: 34px;
+    height: 34px;
+    background-position: -96px -49px;
+}
