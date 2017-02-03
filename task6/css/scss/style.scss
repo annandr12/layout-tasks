@@ -112,50 +112,50 @@ body {
   }
 }
 .carousel {
-  .carousel-inner {
+  &-inner {
     position: relative;
     height: 470px;
-    .carousel-item {
-      @extend .fade;
-      position: relative;
-      height: 100%;
-      display: none;
-      .mask {
-        background: url(../img/mask.png) no-repeat right top;
-        height: 100%;
-      }
-    }
     & > .active {
       display: block;
     }
-    .first-item{
-      background: url(../img/slide-1.jpg) no-repeat right center;
-    }
-    .second-item{
-      background: url(../img/slide-5.jpg) no-repeat right center;
-      background-size: cover;
-    }
-    .third-item{
-      background: url(../img/slide-4.jpg) no-repeat right center;
-    }
-    .carousel-caption {
-      position: absolute;
-      bottom: 0;
-      left: 35px;
-      width: 250px;
-      font-size: 40px;
-      font-weight: bold ;
-      text-transform: uppercase;
-      color: $light-color;
-      background: $dark-gray-color;
-      background-color: rgba(26, 26, 26, 0.8);
-      padding: 25px;
-      .first_word {
-        color: $second-theme-color;
-      }
+  }
+  &-item {
+    @extend .fade;
+    position: relative;
+    height: 100%;
+    display: none;
+    .mask {
+      background: url(../img/mask.png) no-repeat right top;
+      height: 100%;
     }
   }
-  .carousel-indicators {
+  .first-item{
+    background: url(../img/slide-1.jpg) no-repeat right center;
+  }
+  .second-item{
+    background: url(../img/slide-5.jpg) no-repeat right center;
+    background-size: cover;
+  }
+  .third-item{
+    background: url(../img/slide-4.jpg) no-repeat right center;
+  }
+  &-caption {
+    position: absolute;
+    bottom: 0;
+    left: 35px;
+    width: 250px;
+    font-size: 40px;
+    font-weight: bold ;
+    text-transform: uppercase;
+    color: $light-color;
+    background: $dark-gray-color;
+    background-color: rgba(26, 26, 26, 0.8);
+    padding: 25px;
+    .first_word {
+      color: $second-theme-color;
+    }
+  }
+  &-indicators {
     position: absolute;
     bottom: 0;
     left: 46%;
@@ -181,9 +181,9 @@ body {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
+  -webkit-animation-duration: 2s;
   animation-name: fade;
-  animation-duration: 2.5s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes fade {
@@ -214,7 +214,7 @@ body {
         font-size: 20px;
         font-weight: 500;
       }
-      .info_text {
+      &_text {
         height: 3.3em;
         overflow: hidden;
       }
@@ -255,7 +255,7 @@ body {
       position: relative;
       display: inline-block;
       color: $light-color;
-      .service-img,
+      &-img,
       .blue_mask {
         height: 260px;
         width: 260px;
@@ -289,11 +289,11 @@ body {
         padding: 30px 0 0;
         text-align: center;
       }
-    }
-    .service:hover {
-      color: $second-theme-color;
-      .blue_mask  {
-        display: block;
+      &:hover {
+        color: $second-theme-color;
+        .blue_mask  {
+          display: block;
+        }
       }
     }
   }
@@ -308,63 +308,61 @@ main {
       width: 48%;
     }
     .news {
-      .news-item {
+      &-item {
         margin: 15px 0;
         display: flex;
         justify-content: space-between;
-        .news-image {
-          height: 150px;
-          width: 150px;
-          .news-month,
-          .news-day {
-            position: relative;
-            display: block;
-            height: 40px;
-            width: 40px;
-            line-height: 40px;
-            text-align: center;
-            left: -20px;
-            top:15px;
-          }
-          .news-month {
-            color: $light-color;
-            background-color: $first-theme-color;
-          }
-          .news-day {
-            color: $dark-color;
-            background-color: $second-theme-color;
-          }
-          &.first-news-img {
-            background: url(../img/pic-5.jpg) no-repeat;
-          }
-          &.second-news-img {
-            background: url(../img/pic-6.jpg) no-repeat;
-          }
+      }
+      &-image {
+        height: 150px;
+        width: 150px;
+        &.first-news-img {
+          background: url(../img/pic-5.jpg) no-repeat;
         }
-        .news-body {
-          .news-header {
-            padding: 0;
-            a {
+        &.second-news-img {
+          background: url(../img/pic-6.jpg) no-repeat;
+        }
+      }
+      &-month,
+      &-day {
+        position: relative;
+        display: block;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        left: -20px;
+        top:15px;
+      }
+      &-month {
+        color: $light-color;
+        background-color: $first-theme-color;
+      }
+      &-day {
+        color: $dark-color;
+        background-color: $second-theme-color;
+      }
+      &-header {
+        padding: 0;
+        a {
+          color: $first-theme-color;
+        }
+        h3 {
+          margin: 0.5em 0;
+          a {
+            cursor: pointer;
+            color: $dark-color;
+            &:hover {
               color: $first-theme-color;
             }
-            h3 {
-              margin: 0.5em 0;
-              a {
-                cursor: pointer;
-                color: $dark-color;
-                &:hover {
-                  color: $first-theme-color;
-                }
-              }
-            }
-          }
-          .news-text {
-            margin: 0;
-            width: 380px;
-            font-size: 13px;
-            line-height: 1.5;
           }
         }
+      }
+      &-text {
+        margin: 0;
+        width: 380px;
+        font-size: 13px;
+        line-height: 1.5;
       }
     }
     .banner {
@@ -379,7 +377,7 @@ main {
           height: 38px;
           line-height: 38px;
           border: 1px solid $light-gray-color;
-          transition: all 0.2s ease-in-out;
+          transition: background-color 0.2s ease;
           background-color: inherit;
         }
         .plus,
@@ -443,6 +441,7 @@ main {
       text-transform: uppercase;
     }
     a {
+      cursor: pointer;
       color: $text-color;
       line-height: 2.5;
       &:hover {

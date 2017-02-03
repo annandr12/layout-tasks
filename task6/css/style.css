@@ -83,44 +83,44 @@ body {
   .search input {
     margin-right: -4px; }
 
-.carousel .carousel-inner {
+.carousel-inner {
   position: relative;
   height: 470px; }
-  .carousel .carousel-inner .carousel-item {
-    position: relative;
-    height: 100%;
-    display: none; }
-    .carousel .carousel-inner .carousel-item .mask {
-      background: url(../img/mask.png) no-repeat right top;
-      height: 100%; }
-  .carousel .carousel-inner > .active {
+  .carousel-inner > .active {
     display: block; }
-  .carousel .carousel-inner .first-item {
-    background: url(../img/slide-1.jpg) no-repeat right center; }
-  .carousel .carousel-inner .second-item {
-    background: url(../img/slide-5.jpg) no-repeat right center;
-    background-size: cover; }
-  .carousel .carousel-inner .third-item {
-    background: url(../img/slide-4.jpg) no-repeat right center; }
-  .carousel .carousel-inner .carousel-caption {
-    position: absolute;
-    bottom: 0;
-    left: 35px;
-    width: 250px;
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    background: #2a2d32;
-    background-color: rgba(26, 26, 26, 0.8);
-    padding: 25px; }
-    .carousel .carousel-inner .carousel-caption .first_word {
-      color: #f4b60d; }
-.carousel .carousel-indicators {
+.carousel-item {
+  position: relative;
+  height: 100%;
+  display: none; }
+  .carousel-item .mask {
+    background: url(../img/mask.png) no-repeat right top;
+    height: 100%; }
+.carousel .first-item {
+  background: url(../img/slide-1.jpg) no-repeat right center; }
+.carousel .second-item {
+  background: url(../img/slide-5.jpg) no-repeat right center;
+  background-size: cover; }
+.carousel .third-item {
+  background: url(../img/slide-4.jpg) no-repeat right center; }
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+  width: 250px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: #2a2d32;
+  background-color: rgba(26, 26, 26, 0.8);
+  padding: 25px; }
+  .carousel-caption .first_word {
+    color: #f4b60d; }
+.carousel-indicators {
   position: absolute;
   bottom: 0;
   left: 46%; }
-  .carousel .carousel-indicators .dot {
+  .carousel-indicators .dot {
     cursor: pointer;
     margin: 8px;
     display: inline-block;
@@ -128,7 +128,7 @@ body {
     height: 15px;
     background-color: #fff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); }
-  .carousel .carousel-indicators .active::before {
+  .carousel-indicators .active::before {
     content: "";
     display: block;
     margin: 3px;
@@ -137,11 +137,11 @@ body {
     background-color: #181a1d; }
 
 /* Fading animation */
-.fade, .carousel .carousel-inner .carousel-item {
+.fade, .carousel-item {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
+  -webkit-animation-duration: 2s;
   animation-name: fade;
-  animation-duration: 2.5s; }
+  animation-duration: 2s; }
 
 @-webkit-keyframes fade {
   from {
@@ -169,7 +169,7 @@ body {
     .information .content .info h3 {
       font-size: 20px;
       font-weight: 500; }
-    .information .content .info .info_text {
+    .information .content .info_text {
       height: 3.3em;
       overflow: hidden; }
     .information .content .info a {
@@ -201,7 +201,7 @@ body {
       position: relative;
       display: inline-block;
       color: #fff; }
-      .services .content .service .service-img,
+      .services .content .service-img,
       .services .content .service .blue_mask {
         height: 260px;
         width: 260px; }
@@ -227,10 +227,10 @@ body {
         display: block;
         padding: 30px 0 0;
         text-align: center; }
-    .services .content .service:hover {
-      color: #f4b60d; }
-      .services .content .service:hover .blue_mask {
-        display: block; }
+      .services .content .service:hover {
+        color: #f4b60d; }
+        .services .content .service:hover .blue_mask {
+          display: block; }
 
 main {
   background-color: #f7f7f7; }
@@ -240,49 +240,48 @@ main {
     padding-bottom: 30px; }
     main .content section {
       width: 48%; }
-    main .content .news .news-item {
+    main .content .news-item {
       margin: 15px 0;
       display: flex;
       justify-content: space-between; }
-      main .content .news .news-item .news-image {
-        height: 150px;
-        width: 150px; }
-        main .content .news .news-item .news-image .news-month,
-        main .content .news .news-item .news-image .news-day {
-          position: relative;
-          display: block;
-          height: 40px;
-          width: 40px;
-          line-height: 40px;
-          text-align: center;
-          left: -20px;
-          top: 15px; }
-        main .content .news .news-item .news-image .news-month {
-          color: #fff;
-          background-color: #248cec; }
-        main .content .news .news-item .news-image .news-day {
-          color: #181a1d;
-          background-color: #f4b60d; }
-        main .content .news .news-item .news-image.first-news-img {
-          background: url(../img/pic-5.jpg) no-repeat; }
-        main .content .news .news-item .news-image.second-news-img {
-          background: url(../img/pic-6.jpg) no-repeat; }
-      main .content .news .news-item .news-body .news-header {
-        padding: 0; }
-        main .content .news .news-item .news-body .news-header a {
-          color: #248cec; }
-        main .content .news .news-item .news-body .news-header h3 {
-          margin: 0.5em 0; }
-          main .content .news .news-item .news-body .news-header h3 a {
-            cursor: pointer;
-            color: #181a1d; }
-            main .content .news .news-item .news-body .news-header h3 a:hover {
-              color: #248cec; }
-      main .content .news .news-item .news-body .news-text {
-        margin: 0;
-        width: 380px;
-        font-size: 13px;
-        line-height: 1.5; }
+    main .content .news-image {
+      height: 150px;
+      width: 150px; }
+      main .content .news-image.first-news-img {
+        background: url(../img/pic-5.jpg) no-repeat; }
+      main .content .news-image.second-news-img {
+        background: url(../img/pic-6.jpg) no-repeat; }
+    main .content .news-month, main .content .news-day {
+      position: relative;
+      display: block;
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      text-align: center;
+      left: -20px;
+      top: 15px; }
+    main .content .news-month {
+      color: #fff;
+      background-color: #248cec; }
+    main .content .news-day {
+      color: #181a1d;
+      background-color: #f4b60d; }
+    main .content .news-header {
+      padding: 0; }
+      main .content .news-header a {
+        color: #248cec; }
+      main .content .news-header h3 {
+        margin: 0.5em 0; }
+        main .content .news-header h3 a {
+          cursor: pointer;
+          color: #181a1d; }
+          main .content .news-header h3 a:hover {
+            color: #248cec; }
+    main .content .news-text {
+      margin: 0;
+      width: 380px;
+      font-size: 13px;
+      line-height: 1.5; }
     main .content .banner .accordion {
       cursor: pointer;
       width: 100%;
@@ -294,7 +293,7 @@ main {
         height: 38px;
         line-height: 38px;
         border: 1px solid #f7f7f7;
-        transition: all 0.2s ease-in-out;
+        transition: background-color 0.2s ease;
         background-color: inherit; }
       main .content .banner .accordion .plus,
       main .content .banner .accordion .minus {
@@ -341,6 +340,7 @@ main {
       color: #fff;
       text-transform: uppercase; }
     .links .content a {
+      cursor: pointer;
       color: #828385;
       line-height: 2.5; }
       .links .content a:hover {
