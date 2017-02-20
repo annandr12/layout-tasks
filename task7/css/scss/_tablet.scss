@@ -1,0 +1,48 @@
+@media only screen and(max-width : 940px) {
+  .container,
+  %container {
+    width: 748px;
+  }
+
+  .step {
+    width: 240px;
+  }
+
+  .step__arrows {
+    top: 40px;
+  }
+
+  .partners__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .partner {
+    flex-basis: 50%;
+    width: 236px;
+
+    &__icon {
+      right: 120px;
+      // top: 100px;
+    }
+
+    &__info {
+      width: 230px;
+    }
+  }
+
+  .col-1 {
+    width: 236px;
+  }
+
+  .col-2 {
+    width: 492px;
+  }
+
+  .extreme {
+    background-position: right;
+  }
+
+  .travel {
+    background-position: -250px;
+  }
+}

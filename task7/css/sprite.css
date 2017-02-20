@@ -1,0 +1,91 @@
+/*<i class="icons icon-development"></i>
+<i class="icons icons-icon-airplane"></i>
+<i class="icons icons-icon-coffee"></i>
+<i class="icons icons-icon-flask"></i>
+<i class="icons icons-icon-left"></i>
+<i class="icons icons-icon-right"></i>
+<i class="icons icons-icon-tv"></i>
+
+<i class="avatars avatars-avatar-1"></i>
+<i class="avatars avatars-avatar-2"></i>
+<i class="avatars avatars-avatar-3"></i>
+<i class="avatars avatars-avatar-4"></i>
+*/
+
+.icons {
+    background-image: url(../img/icons.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icon-development {
+    width: 112px;
+    height: 26px;
+    background-position: -5px -5px;
+}
+
+.icons-icon-airplane {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -41px;
+}
+
+.icons-icon-coffee {
+    width: 42px;
+    height: 42px;
+    background-position: -57px -41px;
+}
+
+.icons-icon-flask {
+    width: 42px;
+    height: 42px;
+    background-position: -5px -93px;
+}
+
+.icons-icon-left {
+    width: 32px;
+    height: 57px;
+    background-position: -127px -5px;
+}
+
+.icons-icon-right {
+    width: 32px;
+    height: 57px;
+    background-position: -109px -72px;
+}
+
+.icons-icon-tv {
+    width: 42px;
+    height: 42px;
+    background-position: -57px -139px;
+}
+
+.avatars {
+    background-image: url(../img/avatars.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.avatars-avatar-1 {
+    width: 122px;
+    height: 122px;
+    background-position: -5px -5px;
+}
+
+.avatars-avatar-2 {
+    width: 123px;
+    height: 123px;
+    background-position: -137px -5px;
+}
+
+.avatars-avatar-3 {
+    width: 124px;
+    height: 124px;
+    background-position: -270px -5px;
+}
+
+.avatars-avatar-4 {
+    width: 126px;
+    height: 126px;
+    background-position: -404px -5px;
+}
